@@ -5,7 +5,7 @@ const Vehicule = (props) => {
 
 
     return(
-        <div>{props.nom}, {props.année}, {props.couleur},             {props.carburant}, <div className={props.etat === "non validé" ? "border-bottom border-danger" : ""} >{props.etat}</div>
+        <div className={props.etat === "non validé" ? "border border-danger" : ""} >{props.nom}, {props.année}, {props.couleur},             {props.carburant}, {props.etat}
         </div>
     )
 }
